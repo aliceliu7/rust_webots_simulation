@@ -1,0 +1,4 @@
+cargo:rustc-link-search=native=/Applications/Webots.app/Contents/lib/controller
+cargo:rustc-link-lib=dylib=Controller
+cargo:rustc-link-arg=-Wl,-rpath,/Applications/Webots.app/Contents/lib/controller
+cargo:rerun-if-env-changed=WEBOTS_HOME

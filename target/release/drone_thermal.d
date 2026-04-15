@@ -1,0 +1,1 @@
+/Users/aliceliu/Desktop/webots_rust_native-new/target/release/drone_thermal: /Users/aliceliu/Desktop/webots_rust_native-new/build.rs /Users/aliceliu/Desktop/webots_rust_native-new/src/bin/drone_thermal.rs /Users/aliceliu/Desktop/webots_rust_native-new/src/lib.rs

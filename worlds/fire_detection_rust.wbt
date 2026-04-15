@@ -1,0 +1,105 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+
+WorldInfo {
+  info [
+    "Dual drone wildfire detection with ground station"
+    "Rust implementation with Webotsbindings"
+    "Drone 1: simulates and sends thermal data"
+    "Drone 2: Sends bounding box detections"
+    "Ground Station: Receives and fuses sensor data"
+  ]
+  title "Rust-Based Fire Detection"
+  basicTimeStep 8
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0 -4.661740445193012e-15 20.000000024999995
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 30 30
+  floorTileSize 1 1
+}
+Mavic2Pro {
+  hidden position_0_0 -1.3362641875524592e-09
+  hidden position_5_0 -3.127764713894976e-09
+  hidden position_6_0 1.183947338637146e-09
+  translation -4.991880860223828 0.09998402419690175 0.06570872787430704
+  rotation 0.00022325198756606443 -0.9999823333653498 0.00593995923728782 0.06974322048070557
+  name "drone_thermal"
+  controller "drone_thermal"
+}
+Mavic2Pro {
+  hidden position_0_0 -1.3362641875524592e-09
+  hidden position_5_0 -3.127764713894976e-09
+  hidden position_6_0 1.183947338637146e-09
+  translation 5.008119139776172 0.09998402419690175 0.06570872787430704
+  rotation 0.00022325198756606443 -0.9999823333653498 0.00593995923728782 0.06974322048070557
+  name "drone_bbox"
+  controller "drone_bbox"
+}
+Solid {
+  translation 0 0.15 -8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.5 0.5
+      }
+      geometry Box {
+        size 2 0.3 2
+      }
+    }
+    Pose {
+      translation 0 0.5 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.3
+          }
+          geometry Cylinder {
+            height 0.7
+            radius 0.05
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0 0.9 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.8 0.1 0.1
+          }
+          geometry Sphere {
+            radius 0.1
+          }
+        }
+      ]
+    }
+  ]
+  name "ground_station_structure"
+}
+Robot {
+  translation 0 0.1 -8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        transparency 1
+      }
+      geometry Box {
+        size 0.01 0.01 0.01
+      }
+    }
+  ]
+  name "ground_station"
+  controller "ground_station"
+}

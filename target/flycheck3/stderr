@@ -1,0 +1,241 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   1.953260541s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="fire_detection"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/Check { test: false }/TargetInner { ..: lib_target("fire_detection", ["lib"], "/Users/aliceliu/Desktop/webots_rust_native-new/src/lib.rs", Edition2021) }
+   1.953274208s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="fire_detection"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-d2b298b9684ce77e/lib-fire_detection`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::cli::main
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   1.965482750s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/Users/aliceliu/Desktop/webots_rust_native-new/build.rs", Edition2021) }
+   1.965492958s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-403b8e70b1f32de4/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::custom_build::build_work
+   5: cargo::core::compiler::custom_build::prepare
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::cli::main
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   1.966062083s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="fire_detection"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/Check { test: true }/TargetInner { ..: lib_target("fire_detection", ["lib"], "/Users/aliceliu/Desktop/webots_rust_native-new/src/lib.rs", Edition2021) }
+   1.966070166s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="fire_detection"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-e189458fa44fc2de/test-lib-fire_detection`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::cli::main
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   1.966390000s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="drone_bbox"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/Check { test: false }/TargetInner { name: "drone_bbox", doc: true, ..: with_path("/Users/aliceliu/Desktop/webots_rust_native-new/src/bin/drone_bbox.rs", Edition2021) }
+   1.966396916s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="drone_bbox"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-a59b09eee7cceffb/bin-drone_bbox`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::cli::main
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   1.966635916s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="drone_bbox"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/Check { test: true }/TargetInner { name: "drone_bbox", doc: true, ..: with_path("/Users/aliceliu/Desktop/webots_rust_native-new/src/bin/drone_bbox.rs", Edition2021) }
+   1.966640208s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="drone_bbox"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-31e6e9161f8cee02/test-bin-drone_bbox`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::cli::main
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   1.966871833s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="drone_thermal"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/Check { test: false }/TargetInner { name: "drone_thermal", doc: true, ..: with_path("/Users/aliceliu/Desktop/webots_rust_native-new/src/bin/drone_thermal.rs", Edition2021) }
+   1.966876625s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="drone_thermal"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-e16631e0a0e714e3/bin-drone_thermal`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::cli::main
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   1.967084541s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="drone_thermal"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/Check { test: true }/TargetInner { name: "drone_thermal", doc: true, ..: with_path("/Users/aliceliu/Desktop/webots_rust_native-new/src/bin/drone_thermal.rs", Edition2021) }
+   1.967088416s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="drone_thermal"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-47a940812061ffa7/test-bin-drone_thermal`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::cli::main
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   1.967300250s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="ground_station"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/Check { test: false }/TargetInner { name: "ground_station", doc: true, ..: with_path("/Users/aliceliu/Desktop/webots_rust_native-new/src/bin/ground_station.rs", Edition2021) }
+   1.967304458s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="ground_station"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-2c2966f8b9e89814/bin-ground_station`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::cli::main
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   1.967512625s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="ground_station"}: cargo::core::compiler::fingerprint: fingerprint error for webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)/Check { test: true }/TargetInner { name: "ground_station", doc: true, ..: with_path("/Users/aliceliu/Desktop/webots_rust_native-new/src/bin/ground_station.rs", Edition2021) }
+   1.967516583s  INFO prepare_target{force=false package_id=webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new) target="ground_station"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/.fingerprint/webots_fire_detection-01de37357668417c/test-bin-ground_station`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::cli::main
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   Compiling webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)
+error: failed to run custom build command for `webots_fire_detection v0.1.0 (/Users/aliceliu/Desktop/webots_rust_native-new)`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
+
+Caused by:
+  process didn't exit successfully: `/Users/aliceliu/Desktop/webots_rust_native-new/target/debug/build/webots_fire_detection-650661bfc71b924d/build-script-build` (exit status: 101)
+  --- stderr
+
+  thread 'main' panicked at build.rs:37:9:
+  Webots controller library not found at "/Applications/Webots.app/lib/controller"
+  WEBOTS_HOME=/Applications/Webots.app
+  Expected: /Applications/Webots.app/lib/controller/
+  stack backtrace:
+     0: __rustc::rust_begin_unwind
+     1: core::panicking::panic_fmt
+     2: build_script_build::main
+     3: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
